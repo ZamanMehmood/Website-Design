@@ -1,0 +1,67 @@
+.isoft-image{
+     height: 60px;
+     width: 180px
+}
+ .first-section{
+    background: url('../Assets/Vector\ 1.svg');
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+ }
+ .creative-container{
+    margin-top: 190px;
+ }
+ .agency-heading{
+  float: left;
+  margin-left: 210px;
+ }
+ .agency-headings{
+    float: left ;
+    margin-top: 11px;
+    margin-left: 210px;
+ }
+ .creative-headings{
+    margin-top: 50px;
+    margin-left: 113px;
+    font-size: 19px;
+ }
+ .getQuote{
+    margin-top: 80px;
+    margin-left: 220px;
+    width: 150px;
+ }
+ .image-prevew{
+    height: 750px;
+    width: 550px;
+ }
+ @media (max-width: 540px) {
+    .creative-container{
+        margin-top: 50px;
+     }
+     .creative-heading{
+        font-size: 18px;
+     }
+     .agency-heading{
+        float: left;
+        margin-left: 70px;
+        font-size: 18px;
+       }
+       .agency-headings{
+        float: left ;
+        margin-top: 11px;
+        margin-left: 210px;
+        font-size: small;
+     }
+     .creative-headings{
+        margin-top: 35px;
+        margin-left: 43px;
+        font-size: 12px;
+     }
+     .getQuote{
+        margin-top: 5px;
+        margin-left: 50px;
+        width: 150px;
+     }
+ }
