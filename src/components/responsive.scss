@@ -1,0 +1,68 @@
+ @media (max-width: 540px) {
+    .creative-container{
+        margin-top: 50px;
+     }
+     .creative-heading{
+        font-size: 18px;
+     }
+     .agency-heading{
+        float: left;
+        margin-left: 70px;
+        font-size: 18px;
+       }
+       .agency-headings{
+        float: left ;
+        margin: 11px 0 0 210px;
+        font-size: small;
+     }
+     .creative-headings{
+        margin: 35px 0 0 43px;
+        font-size: 12px;
+     }
+     .getQuote{
+        margin: 5px 0 0 50px;
+        width: 150px;
+     }
+
+     .key-values{
+    font-size: 30px;
+     }
+     .key-text{
+        font-size: 12px;
+        text-align: center;
+     }
+     .first-text{
+        font-size: 12px;
+        text-align: center;
+     }
+
+     .frame-image{
+        order: 1;
+        height: 200px;
+        width: 200px;
+     }
+     .first-column{
+        order: 2;
+     }
+
+     .main-border{
+        border-bottom: 5px solid red;
+        width: 120px;
+        margin-left: 90px;
+     }
+     .first-border{
+        border-bottom: 6px solid #14A0C0;
+        width: 220px;
+        margin: 0 0 15px 40px;
+     }
+     .second-border{
+        border-bottom: 6px solid rgba(125, 227, 20,1);
+        width: 220px;
+        margin: 0 0 15px 40px;
+     }
+     .third-border{
+        border-bottom: 6px solid #14A0C0;
+        width: 220px;
+        margin: 0 0 15px 40px;
+     }
+ }
