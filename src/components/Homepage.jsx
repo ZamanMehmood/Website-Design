@@ -6,6 +6,10 @@ import preview1 from "../Assets/preview1.png";
 import Frame from "../Assets/Frame.png";
 import Vector1 from "../Assets/Vector1.png";
 import Vector2 from "../Assets/Vector2.png";
+import group167 from "../Assets/group167.png";
+import group168 from "../Assets/group168.png";
+import group170 from "../Assets/group170.png";
+import group171 from "../Assets/group171.png";
 
 const Homepage = () => {
   return (
@@ -133,7 +137,6 @@ const Homepage = () => {
               <p className="text-light creative-headings">
                 We create magnificent products through Technology
               </p>
-
               <button
                 type="button"
                 className="btn btn-outline-dark text-light getQuote p-2 "
@@ -171,7 +174,6 @@ const Homepage = () => {
                     <div className="first-border">
                       <h5 className="interfere-heading">Interfere</h5>
                     </div>
-
                     <p className="first-text">
                       Amet minim mollit non deserunt ullamco est sit aliqua
                       dolor do amet sint. Velit officia{" "}
@@ -196,7 +198,7 @@ const Homepage = () => {
                   </div>
                 </div>
                 <div className="col-lg-4 ms-auto">
-                  <div >
+                  <div>
                     <img
                       src={Vector1}
                       alt="vector 1"
@@ -215,11 +217,45 @@ const Homepage = () => {
               </div>
             </div>
             <div className="col-lg-6">
-              <img
-                src={Frame}
-                className="img-fluid frame-image"
-                alt="frame"
-              />
+              <img src={Frame} className="img-fluid frame-image" alt="frame" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* section # 4 */}
+
+      <section className="third-section">
+        <div className="offer">
+        <h1 className="offer-heading">WHAT WE <span className="bn">
+        OFFER
+          </span></h1>
+        </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6">
+             <div className="row">
+              <div className="col-6 ">
+              <img src={group167} className="img-fluid first-image" alt="" />
+              </div>
+              <div className="col-6 ">
+              <img src={group168} className="img-fluid second-image" alt="" />
+              </div>
+             </div>
+             <div className="row">
+              <div className="col-6 ">
+              <img src={group170} className="img-fluid first-image" alt="" />
+              </div>
+              <div className="col-6 ">
+            <img src={group171} className="img-fluid second-image" alt="" />
+              </div>
+             </div>
+            </div>
+            <div className="col-lg-6">
+              <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit..
+              </p>
+               
             </div>
           </div>
         </div>

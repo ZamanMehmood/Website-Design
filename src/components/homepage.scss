@@ -67,3 +67,37 @@
    height: 600px;
    width: 600px;
 }
+
+.third-section{
+   background: url('../Assets/Rectangle\ 110.png');
+   background-position: center;
+   position: relative;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+ .first-image{
+   margin-bottom: 15px;
+ }
+
+ .second-image{
+   margin-top: 25px;
+ }
+
+ .offer{
+   margin-top: 10px;
+   margin-left: 1000px;
+   margin-right: 20px;
+   // width: 40vh;
+   // float: right;
+   // border-bottom: 8px solid red;
+   
+ }
+ .bn{
+   border-bottom: 8px solid red;
+ }
+
+ .development{
+   // float: right;
+   margin-left: 250px;
+ }
