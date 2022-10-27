@@ -1,6 +1,7 @@
  @media (max-width: 540px) {
     .creative-container{
-        margin-top: 50px;
+        margin-top: 40px;
+      float: left;
      }
      .creative-heading{
         font-size: 18px;
@@ -30,6 +31,7 @@
      .key-text{
         font-size: 12px;
         text-align: center;
+        margin-top: 15px;
      }
      .first-text{
         font-size: 12px;
@@ -40,6 +42,7 @@
         order: 1;
         height: 200px;
         width: 200px;
+        margin-left: 40px;
      }
      .first-column{
         order: 2;
@@ -66,12 +69,91 @@
         margin: 0 0 15px 40px;
      }
      .offer{
-      margin-top: 15px;
-   margin-left: 50px;
-   margin-bottom: 20px;
-   // margin-right: 20px;
+      margin: 15px 0 20px 30px;
      }
      .offer-heading{
       font-size: 18px;
      }
+
+     .first-container{
+      width: auto;
+       margin-left: 10px;
+       margin-top: 40px;
+       font-size: 12px;
+   }
+   .second-container{
+      margin: 10px 0 0 10px;
+      font-size: 12px;
+   }
+   
+   .third-container{
+      margin: 5px 110px 0 0;
+   }
+   .vector-image{
+      margin-left: 25px;
+   }
+   .keyValues{
+      border-bottom: 5px solid red;
+      padding: 5px;
+   }
+   .fist-heading{
+      font-size: 16px;
+   }
+   .pargraph{
+      font-size: 12px;
+   }
+   .webDevelopment{
+      padding-left: 23px;
+      margin-top: 20px;
+   }
+   .webheading{
+      font-size: 18px;
+   }
+   .webparagraph{
+     font-size: 12px;
+   }
+   .sc1{
+      display: flex;
+      align-items: center;
+   }
+   .learnMore-container{
+      padding: 5px 55px 0 0 !important;
+   }
+   .learnMore-button{
+      width: 150px;
+      color: white !important;
+   background-color: #c10017 !important;
+   margin-bottom: 10px;
+   
+   }
+   .ui-heading{
+      border-bottom: 5px solid black;
+      width: 80%;
+      text-align: center;
+      margin-left: 30px;
+   }
+   .ui-para{
+      font-size: 12px;
+      text-align: center;
+   }
+
+   .sc2-1{
+      order: 2;
+   }
+   .sc2-2{
+      order: 1;
+   }
+
+   .ui-headings{
+      font-size: 18px;
+      border-bottom: 5px solid black;
+      // width: 80%;
+      // text-align: center;
+      margin-top: 25px;
+      margin-left: 20px;
+      padding: 10px;
+      margin-bottom: 10px;
+   }
+    
+    
  }

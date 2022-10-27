@@ -1,7 +1,7 @@
 import React from "react";
 import "./homepage.scss";
 import "./responsive.scss";
-import ISOFTSTUDIO from "../Assets/ISOFTSTUDIOS1.png";
+// import ISOFTSTUDIO from "../Assets/ISOFTSTUDIOS1.png";
 import preview1 from "../Assets/preview1.png";
 import Frame from "../Assets/Frame.png";
 import Vector1 from "../Assets/Vector1.png";
@@ -10,139 +10,47 @@ import group167 from "../Assets/group167.png";
 import group168 from "../Assets/group168.png";
 import group170 from "../Assets/group170.png";
 import group171 from "../Assets/group171.png";
+import Rectangle108 from "../Assets/Rectangle108.svg";
+import Group39 from "../Assets/Group39.svg";
+import Group42 from "../Assets/Group42.svg";
+
+import Group45 from "../Assets/Group45.svg";
+import Group44 from "../Assets/Group44.svg";
+import mongo211 from "../Assets/mongo211.png";
+
+import cassandara from "../Assets/cassandara.svg";
+import oracle from "../Assets/oracle.svg";
+import vue from "../Assets/vue.png";
+import Navbar from "./Navbar";
+
+
+
+
+
 
 const Homepage = () => {
   return (
     <div>
-      {/* navbar section  */}
-      <nav className="navbar navbar-expand-lg">
-        <div className="container-fluid">
-          <a className="navbar-brand active">
-            <img
-              src={ISOFTSTUDIO}
-              alt="Image"
-              className="img-fluid isoft-image"
-            />
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
-              <li className=" nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle p-2"
-                  href="#"
-                  id="navbarDropdowns"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Services{" "}
-                </a>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdowns">
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Web Development
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Cloud Computing
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      QA
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Mobile App Development
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Payment Integration
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      E-Commerce Development
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      UI/UX Design
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Saas Development
-                    </a>
-                  </li>
-                </ul>
-              </li>
-
-              <li className="nav-item">
-                <a className="nav-link p-2" href="#">
-                  About
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link p-2" href="">
-                  Portfolio
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link p-2" href="">
-                  Career
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link p-2" href="#">
-                  Contact
-                </a>
-              </li>
-            </ul>
-            <button type="button" className="btn btn-outline-danger text-dark">
-              SCHEDULE A MEETING
-            </button>
-          </div>
-        </div>
-      </nav>
+       <Navbar />
       {/* section #1 */}
       <section>
-        <div className="first-section container-fluid mt-4">
-          <div className="row">
+        <div className="first-section container-fluid ">
+          <div className="row align-items-center">
             <div className="col-lg-6 mt-5">
               <img src={preview1} className="img-fluid image-prevew" />
             </div>
             <div className="col-lg-6">
-              <div className="creative-container">
-                <h3 className="fw-bold text-light creative-heading">
-                  {" "}
-                  We are a Creative <br />
-                  <span className="agency-heading">Agency</span>
-                </h3>
+              <div className="first-container">
+                <h1 className="text-light">we are a Creative Agency</h1>
               </div>
-              <p className="text-light creative-headings">
+              <p className="text-light second-container">
                 We create magnificent products through Technology
               </p>
-              <button
-                type="button"
-                className="btn btn-outline-dark text-light getQuote p-2 "
-              >
-                Get a Quote
-              </button>
+              <div className="text-end third-container">
+                <button type="button" className="btn getQuote p-2">
+                  Get a Quote
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -152,8 +60,10 @@ const Homepage = () => {
       <section className="second-section">
         <div className="container">
           <div className="col-lg-7 pt-3">
-            <h1 className=" mt-4 key-values">Our Key Values</h1>
-            <hr className="main-border" />
+            <h1 className=" mt-4 key-values">
+              Our <span className="keyValues">Key Values</span>{" "}
+            </h1>
+
             <p className="key-text">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
@@ -227,35 +137,102 @@ const Homepage = () => {
 
       <section className="third-section">
         <div className="offer">
-        <h1 className="offer-heading">WHAT WE <span className="bn">
-        OFFER
-          </span></h1>
+          <h1 className="fist-heading">
+            WHAT WE <span className="offer-span">OFFER</span>
+          </h1>
+          <p className="pargraph">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit..
+          </p>
         </div>
+
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
-             <div className="row">
-              <div className="col-6 ">
-              <img src={group167} className="img-fluid first-image" alt="" />
+              <div className="row">
+                <div className="col-6 ">
+                  <img
+                    src={group167}
+                    className="img-fluid first-image"
+                    alt=""
+                  />
+                </div>
+                <div className="col-6 ">
+                  <img
+                    src={group168}
+                    className="img-fluid second-image"
+                    alt=""
+                  />
+                </div>
               </div>
-              <div className="col-6 ">
-              <img src={group168} className="img-fluid second-image" alt="" />
+              <div className="row">
+                <div className="col-6 ">
+                  <img
+                    src={group170}
+                    className="img-fluid first-image"
+                    alt=""
+                  />
+                </div>
+                <div className="col-6 ">
+                  <img
+                    src={group171}
+                    className="img-fluid second-image"
+                    alt=""
+                  />
+                </div>
               </div>
-             </div>
-             <div className="row">
-              <div className="col-6 ">
-              <img src={group170} className="img-fluid first-image" alt="" />
-              </div>
-              <div className="col-6 ">
-            <img src={group171} className="img-fluid second-image" alt="" />
-              </div>
-             </div>
             </div>
-            <div className="col-lg-6">
-              <p>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit..
-              </p>
-               
+            <div className="col-lg-6 ">
+
+              <div className="webDevelopment">
+                <h2 className="webheading">Web Development</h2>
+                <p className="webparagraph">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit..
+                </p>
+              </div>
+              {/* <div class="container ms-5"> */}
+              <div className="grid-container">
+                <div className="row pt-3 ">
+                 <div className="col-lg-4 ">
+                    <img src={Rectangle108}  className="img-fluid" alt="" />
+                  </div>
+                  <div className="col-lg-4">
+                    <img src={Group39} className="img-fluid" alt="" />
+                  </div>
+                  <div className="col-lg-4">
+                    <img src={Group42} className="img-fluid" alt="" />
+                  </div>
+                
+                </div>
+                <div className="row pt-3 ">
+                  <div className="col-lg-4 mt-2">
+                  <img src={Group45} className="img-fluid" alt="" />
+                  </div>
+                  <div className="col-lg-4 mt-2">
+                  <img src={Group44} className="img-fluid" alt="" />
+                  </div>
+                  <div className="col-lg-4 mt-2">
+                  <img src={mongo211} className="img-fluid" alt="" />
+                  </div>
+                </div>
+                <div className="row pt-3 ">
+                  <div className="col-lg-4 mt-4">
+                    <img src={cassandara} className="img-fluid" alt="" />
+                  </div>
+                  <div className="col-lg-4 mt-4">
+                    <img src={oracle} className="img-fluid" alt="" />
+                  </div>
+                  <div className="col-lg-4 mt-2">
+                    <img src={vue} className="img-fluid" alt="" />
+                  </div>
+                </div>
+                </div>
+                 <div className="text-end learnMore-container">
+                <button type="button" className="btn learnMore-button p-2">
+                 Learn More
+                </button>
+              </div>
             </div>
           </div>
         </div>

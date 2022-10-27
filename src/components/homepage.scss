@@ -10,24 +10,14 @@
     background-size: cover;
     height: 600px;
  }
- .creative-container{
-    margin-top: 190px;
- }
- .agency-heading{
-  float: left;
-  margin-left: 210px;
- }
- .agency-headings{
-    float: left ;
-    margin: 11px 0 0 210px;
- }
- .creative-headings{
-   margin: 50px 0 0 113px;
-    font-size: 19px;
- }
  .getQuote{
-   margin: 80px 0 0 220px;
     width: 150px;
+   border: 1px solid #c10017 !important;
+ }
+ .getQuote:hover{
+   background-color: #c10017 !important;
+   color: white !important;
+   border: none;
  }
  .image-prevew{
     height: 750px;
@@ -75,29 +65,85 @@
    background-repeat: no-repeat;
    background-size: cover;
 }
-
  .first-image{
    margin-bottom: 15px;
  }
-
  .second-image{
    margin-top: 25px;
  }
-
  .offer{
    margin-top: 10px;
-   margin-left: 1000px;
-   margin-right: 20px;
-   // width: 40vh;
-   // float: right;
-   // border-bottom: 8px solid red;
-   
+   margin-left: 800px;
+   // margin-right: 20px;
  }
- .bn{
+ .offer-span{
    border-bottom: 8px solid red;
  }
+.shadowl-heading{
+   background-color: white;
+   outline: red;
+   height: 40px;
+   border: 1px solid red;
+   border-radius: 10px;
+}
+.shadowl-heading:hover{
+   background-color: red;
+   color: white;
+}
+.first-container{
+    width: 440px;
+    margin: 100px 0 0 110px;
+}
+.second-container{
+   margin: 15px 0 0 110px;
+}
+.third-container{
+   margin: 150px 110px 0 0 ;
+}
+.keyValues{
+   border-bottom: 8px solid red;
+}
+.webDevelopment{
+   padding-left: 113px;
+   margin-top: 20px;
+}
 
- .development{
-   // float: right;
-   margin-left: 250px;
- }
+.grid-container{
+   padding-left: 70px;
+}
+
+// .learnMore{
+//    height: 50px;
+//    background-color: #c10017;
+//    border-radius: 10px;
+// }
+
+.learnMore-container{
+   margin: 80px 0 0 0 ;
+}
+
+.learnMore-button{
+   width: 150px;
+   color: white !important;
+background-color: #c10017 !important;
+margin-bottom: 20px;
+}
+.ui-heading{
+   border-bottom: 5px solid black;
+   width: 60%;
+   text-align: center;
+   margin-left: 90px;
+   padding: 10px;
+   margin-bottom: 20px;
+}
+
+.ui-headings{
+   border-bottom: 5px solid black;
+   width: 80%;
+   // text-align: center;
+   margin-left: 40px;
+   padding: 10px;
+   margin-bottom: 20px;
+}
+ 
+ 
