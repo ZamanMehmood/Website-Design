@@ -3,7 +3,7 @@ import "./App.css";
 import Services from "./components/services";
 
 function App() {
-  return (
+  return ( 
     <div className="App">
       {/* <Homepage /> */}
       <Services />
