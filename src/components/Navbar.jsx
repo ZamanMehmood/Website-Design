@@ -1,5 +1,6 @@
 import React from 'react';
 import ISOFTSTUDIO from "../Assets/ISOFTSTUDIOS1.png";
+import { Link } from 'react-router-dom';
 import "./homepage.scss";
 
 const Navbar = () => {
@@ -9,11 +10,13 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg ">
         <div className="container-fluid">
           <a className="navbar-brand active">
+            <Link to='/'>
             <img
               src={ISOFTSTUDIO}
               alt="Image"
               className="img-fluid isoft-image"
             />
+            </Link>
           </a>
           <button
             className="navbar-toggler"

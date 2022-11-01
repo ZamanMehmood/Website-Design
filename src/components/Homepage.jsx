@@ -13,20 +13,16 @@ import group171 from "../Assets/group171.png";
 import Rectangle108 from "../Assets/Rectangle108.svg";
 import Group39 from "../Assets/Group39.svg";
 import Group42 from "../Assets/Group42.svg";
-
 import Group45 from "../Assets/Group45.svg";
 import Group44 from "../Assets/Group44.svg";
 import mongo211 from "../Assets/mongo211.png";
-
 import cassandara from "../Assets/cassandara.svg";
 import oracle from "../Assets/oracle.svg";
 import vue from "../Assets/vue.png";
+import award1 from "../Assets/award1.svg";
+import award2 from "../Assets/award2.png";
+import award3 from "../Assets/award3.png";
 import Navbar from "./Navbar";
-
-
-
-
-
 
 const Homepage = () => {
   return (
@@ -61,7 +57,7 @@ const Homepage = () => {
         <div className="container">
           <div className="col-lg-7 pt-3">
             <h1 className=" mt-4 key-values">
-              Our <span className="keyValues">Key Values</span>{" "}
+              Our <span className="keyValues">Key Values</span>
             </h1>
 
             <p className="key-text">
@@ -234,6 +230,19 @@ const Homepage = () => {
                 </button>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="awardBgColor">
+        <div className="container ">
+          <div>
+          <h2 className="text-center p-3"><span className="awards-heading">Awards</span>& Recognition</h2>
+          </div>
+          <div className="m-2">
+            <img src={award1} alt="" className="img-fluid p-2" />
+            <img src={award2} alt="" className="img-fluid p-2"/>
+            <img src={award3} alt="" className="img-fluid p-2"/>
           </div>
         </div>
       </section>
