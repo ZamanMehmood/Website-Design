@@ -161,5 +161,43 @@
       margin-bottom: 10px;
    }
     
-    
+   // portfolio responsive styling  
+.protfolio{
+   text-align: center;
+   font-size: 18px;
+}
+
+.scs1{
+   font-size: 18px;
+   text-align: start;
+}
+.meeting-button{
+   text-align: center;
+    margin: 10px 0 30px 40px;
+}
+
+.projects-button{
+   background-color: #c10017;
+   border-radius: 10px;
+   border: none;
+   height: 30px;
+   width: 110px;
+   float: left;
+   text-align: center;
+   margin-top: 40px;
+   margin-left: 80px;
+}
+
+.projects-button1{
+   background-color: #c10017;
+   border-radius: 10px;
+   border: none;
+   height: 30px;
+   width: 110px;
+   // float: left;
+   text-align: center;
+   margin-top: 40px;
+   margin-left: 80px;
+}
+   // 
  }
