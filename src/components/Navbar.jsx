@@ -157,11 +157,6 @@ const Navbar = () => {
             <ul className="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
               <li className=" nav-item dropdown">
                 <div className="btn-group">
-                {/* <li className="nav-item">
-                  <Link to="/services" className="nav-link p-2">
-                  Services
-                  </Link>
-                  </li> */}
                   <li className="nav-item">
                 <Link to="/services" className="nav-link p-2">
                   Services

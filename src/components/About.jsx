@@ -1,5 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar';
+import "./homepage.scss";
+import "./responsive.scss";
 
 const About = () => {
     return ( 

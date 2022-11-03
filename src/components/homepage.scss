@@ -229,4 +229,172 @@ margin-bottom: 20px;
    float: left;
    margin-top: 40px;
 }
+.triangle-background{
+   background: #F0EFEF;
+}
+.engagement-heading{
+   border-bottom: 10px solid red;
+}
+ 
 // 
+
+// caree page styling 
+
+.careebgImg{
+   // background: url('../Assets/caree-Assets/Rectangle90.svg');
+   // height: 100%;
+   // width: 100%;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+
+}
+ 
+
+.work-heading{
+   border-bottom: 10px solid #C10017;
+}
+.sn1{
+   text-align: center;
+}
+
+.work-para{
+text-align: centers;
+margin-top: 25px;
+}
+
+
+.career-email{
+   color: firebrick;
+}
+
+.sn-3{
+   text-align: center;
+   margin-top: 20px;
+}
+
+.sn-4{
+   border-bottom: 10px solid firebrick;
+   // text-align: center;
+   
+   // align-items: center;
+}
+.sn-5{
+   display: flex;
+   justify-content: center;
+}
+
+
+.bgcareer{
+  background: #F1F1F1;
+}
+
+.sn-7{
+   text-align: center;
+}
+.f1-container{
+   width: 1180px;
+height: 72px;
+// background-color: #14A0C0;
+margin-bottom: 15px;
+
+}
+.details-button{
+   height: 30px;
+   width: 80px;
+   border: 1px solid black;
+   border-radius: 10px;
+   margin-left: 5px;
+//  margin-left: auto;
+// float: right;
+
+}
+
+.apply-button{
+   height: 30px;
+   width: 110px;
+   border: 1px solid black;
+   border-radius: 10px;
+   margin-left: 5px;
+
+   // margin-left: 5px;
+// float: right;s
+
+}
+.sn-9{
+   display: flex;
+   align-items: center;
+}
+.buttonss{
+   float: right;
+}
+
+.fn-1{
+   border-bottom: 2px solid #646464;
+}
+// 
+
+
+//  junior page styling
+.rails-title{
+   border-bottom: 1px solid #646464;
+}
+
+.ror-junior{
+   margin-bottom: 30px;
+}
+.job-details{
+   height: 70px;
+   width: 650px;
+   // background-color: #14A0C0;
+   margin-top: 7px;
+ border-bottom: 2px solid #646464;
+}
+
+.job-position{
+   margin-left: 200px;
+}
+
+.qualification-detail{
+   margin-left: 165px;
+}
+
+.experience-details{
+   margin-left: 180px;
+}
+.open-positions{
+   margin-left: 150px;
+}
+.job-description{
+   margin: 20px;
+   font-weight: bolder;
+}
+
+.description-details{
+   margin-left: 30px;
+   margin-top: 10px;
+}
+
+.main-boder{
+   border: 1px solid #646464;
+   border-radius: 10px;
+   padding: 10px;
+}
+.work1{
+   width: 650px;
+   text-align: center;
+   margin-left: 350px;
+   margin-top: 10px;
+}
+
+.b-positions{
+   background-color: white;
+   outline: red;
+   height: 40px;
+   border: 1px solid red;
+   border-radius: 10px;
+}
+.b-positions:hover{
+   background-color: red;
+   color: white;
+}

@@ -22,6 +22,9 @@ import vue from "../Assets/vue.png";
 import award1 from "../Assets/award1.svg";
 import award2 from "../Assets/award2.png";
 import award3 from "../Assets/award3.png";
+import group173 from "../Assets/group173.svg";
+import group182 from "../Assets/group182.png";
+
 import Navbar from "./Navbar";
 
 const Homepage = () => {
@@ -234,6 +237,23 @@ const Homepage = () => {
         </div>
       </section>
 
+      {/* section # 5  */}
+      <section className="triangle-background">
+           <div className="container">
+            <div className="row">
+              <div className="col-lg-6 mss">
+                    <div>
+                      <h2><span className="engagement-heading">Engage</span>ment Model</h2>
+                      <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit..</p>
+                      <img src={group182} alt="" className="img-fluid"  />
+                    </div>
+              </div>
+              <div className="col-lg-6"></div>
+            </div>
+           </div>
+           </section>
+                
+         {/* section # 6 */}
       <section className="awardBgColor">
         <div className="container ">
           <div>
@@ -246,7 +266,7 @@ const Homepage = () => {
           </div>
         </div>
       </section>
-    </div>
+    </div> 
   );
 };
 
