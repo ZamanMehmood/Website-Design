@@ -398,3 +398,79 @@ margin-bottom: 15px;
    background-color: red;
    color: white;
 }
+
+.contact-heading{
+   border-bottom: 8px solid #C10017;
+}
+
+.shadowl-cheading{
+   background-color: white;
+   outline: red;
+   height: 40px;
+   border: 1px solid red;
+   margin-top: 25px;
+   border-radius: 10px;
+}
+.shadowl-cheading:hover{
+   background-color: red;
+   color: white;
+}
+
+.bg-contact{
+   background-color: #F5F5F5;
+}
+.cs-1{
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.cs-2{
+   border-bottom: 8px solid #C10017;
+}
+.first-column{
+   position: relative;
+}
+.second-column{
+   position: relative;
+}
+
+.contact-image{
+   height: 250px;
+   width: 250px;
+   display: table-column;
+   margin-left: 185px;
+}
+.column-content1{
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   padding-top: 10px;
+}
+.column-content2{
+   position: absolute;
+   left: 12%;
+   top: 50%;
+   padding-top: 10px;
+}
+.contact-image1{
+   height: 250px;
+   width: 250px;
+   display: table-column;
+}
+ .map-section{
+   background: #BDBDBD;
+ }
+.join-now{
+   background: #C10017;
+   height: 50px;
+   width: 120px;
+   border-radius: 10px;
+margin-left: 500px;
+border: none;
+}
+.contact-parent{
+   display: flex;
+   align-items: center;
+
+}
