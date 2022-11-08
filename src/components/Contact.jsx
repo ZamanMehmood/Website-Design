@@ -61,14 +61,16 @@ const Contact = () => {
               <div className="col-lg-6">
                 <div className="second-column">
                   <img src={c3} alt="" className="img-fluid contact-image1" />
-                  <h6 className="column-content2"> (042) 35312424</h6>
+                  <h6 className="column-content2">  <a href="tel:123-456-7890"> (042) 35312424</a></h6>
                 </div>
                 <div className="second-column">
                   <img src={c4} alt="" className="img-fluid contact-image1" />
                   <h6 className="column-content2">
-                    sales@isoftstudios.com <br />
+                   <a href="mailto:hr@isoftstudios.com">
+                   sales@isoftstudios.com <br />
                     hello@isoftstudios.com <br />
                     hr@isoftstudios.com
+                   </a>
                   </h6>
                 </div>
               </div>

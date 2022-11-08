@@ -27,7 +27,6 @@ function App() {
           <Route path="/juniorRor-developer" element={<Junior />} />
           <Route path="/hr-intern" element={<Intern />} />
           <Route path="/project-manager" element={<ProjectManager />} />
-
       </Routes>
     </BrowserRouter>
     </div>

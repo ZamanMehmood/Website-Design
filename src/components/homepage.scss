@@ -466,3 +466,49 @@ border: none;
    align-items: center;
 
 }
+
+ .About-first-section{
+   margin: 20px;
+ }
+
+ .About-third-section{
+   background: url("../Assets/About-Assets/about-background.svg");
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+ .isoftstu{
+   border-bottom: 8px solid #C10017;
+ }
+ .about-first-container{
+   border-bottom: 2px solid #646464;
+ }
+
+ .about-second-container{
+   border-bottom: 2px solid #646464;
+   margin-left: 15px;
+ }
+
+ 
+ .About-fourth-section{
+   background: #E8E8E8;
+ }
+
+ .career-banner{
+   background: url('../Assets/caree-Assets/Rectangle90.svg');
+   // background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+   height: 80vh;
+   width: 100%;
+   position: relative;
+   object-fit: contain;
+ }
+
+ .career-1banner{
+   background: #14A0C0;
+   position: absolute;
+   left: 650px;
+
+ }
+
+ 
