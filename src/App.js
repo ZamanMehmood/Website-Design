@@ -7,10 +7,6 @@ import About from "./components/About";
 import Career from "./components/Career";
 import Contact from "./components/Contact";
 import Senior from "./components/Senior";
-import Junior from "./components/Junior";
-import Intern from "./components/Intern";
-import ProjectManager from "./components/ProjectManager";
-
 
 function App() {
   return ( 
@@ -24,9 +20,9 @@ function App() {
           <Route path="/career" element={<Career />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/seniorRor-developer" element={<Senior />} />
-          <Route path="/juniorRor-developer" element={<Junior />} />
-          <Route path="/hr-intern" element={<Intern />} />
-          <Route path="/project-manager" element={<ProjectManager />} />
+          <Route path="/juniorRor-developer" element={<Senior />} />
+          <Route path="/hr-intern" element={<Senior />} />
+          <Route path="/project-manager" element={<Senior />} />
       </Routes>
     </BrowserRouter>
     </div>

@@ -6,13 +6,14 @@ import c2 from "../Assets/contact-Assets/c2.svg";
 import c3 from "../Assets/contact-Assets/c3.svg";
 import c4 from "../Assets/contact-Assets/c4.svg";
 import map from "../Assets/contact-Assets/map.png";
+import Footer from "./Footer";
 
 import "./homepage.scss";
 import "./responsive.scss";
 
 const Contact = () => {
   return (
-    <>
+    <div>
       <Navbar />
       <section>
         <div className="container">
@@ -89,9 +90,11 @@ const Contact = () => {
       </section>
       {/*  */}
       <section>
-        <img src={map} alt="" className="img-fluid" />
+        {/* <img src={map} alt="" className="img-fluid" /> */}
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108890.71258881237!2d74.1918597430211!3d31.473731138728972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391903d3cba2bc91%3A0xd0bb34288eadafb2!2siSOFTSTUDIOS!5e0!3m2!1sen!2s!4v1668064325312!5m2!1sen!2s" width="100%" height="600" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
-    </>
+      <Footer />
+    </div>
   );
 };
 

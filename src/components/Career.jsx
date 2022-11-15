@@ -1,32 +1,29 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Rectangle90 from "../Assets/caree-Assets/Rectangle90.svg";
-import { Link } from "react-router-dom";
+import { createSearchParams, Link, useNavigate } from "react-router-dom";
 import "./homepage.scss";
 import "./responsive.scss";
-
+import Footer from "./Footer";
+// import { useNavigate } from "react-router-dom";
 
 const Career = () => {
-  return (
-    <>
-      <Navbar />
+  const navigate = useNavigate();
 
-      <section>
-        <div className="container-fluid ">
-          <div className="row">
-            <div className="col-lg-8 ">
-              <img src={Rectangle90} alt="" className="img-fluid careebgImg" />
-            </div>
-            <div className="col-lg-4">
-              <h2 className="sn1">
-                <span className="work-heading">Work wi</span>th Us
-              </h2>
-              <p className="work-para">
-                IF YOU APPROACH EVERY PROJECT WITH DRIVE AND WONDER AND REFUSE
-                TO SETTLE UNTIL THE WORK IS AT ITS ABSOLUTE BEST THEN YOU MAY BE
-                THE NEXT STELLAR ADDITION TO OUR ISOFT ROCKET TEAM.
-              </p>
-            </div>
+  return (
+    <div>
+      <Navbar />
+      <section className="careerbg-image">
+        <div className="container-fluid">
+          <div className="caree-first-section">
+            <h2 className="sn1">
+              <span className="work-heading">Work wi</span>th Us
+            </h2>
+            <p className="work-para">
+              IF YOU APPROACH EVERY PROJECT WITH DRIVE AND WONDER AND REFUSE TO
+              SETTLE UNTIL THE WORK IS AT ITS ABSOLUTE BEST THEN YOU MAY BE THE
+              NEXT STELLAR ADDITION TO OUR ISOFT ROCKET TEAM.
+            </p>
           </div>
         </div>
       </section>
@@ -49,9 +46,20 @@ const Career = () => {
             <div className="d-flex">
               <p>minmum experience: 2 to 4 years</p>
               <div className="ms-auto">
-                <Link to='/seniorRor-developer'>
-                <button className="details-button">Details</button>
-                </Link>
+                <button
+                  className="details-button"
+                  onClick={() =>
+                    navigate({
+                      pathname: "/seniorRor-developer",
+                      search: createSearchParams({
+                        seniorDevleoper: true,
+                      }).toString(),
+                    })
+                  }
+                >
+                  Details
+                </button>
+                {/*  */}
                 <button className="apply-button">Apply More</button>
               </div>
             </div>
@@ -61,10 +69,19 @@ const Career = () => {
             <div className="d-flex">
               <p>minimum experience: Fresh Graduate</p>
               <div className="ms-auto">
-              <Link to='/juniorRor-developer'>
-                <button className="details-button">Details</button>
-                </Link>
-
+              <button
+                  className="details-button"
+                  onClick={() =>
+                    navigate({
+                      pathname: "/juniorRor-developer",
+                      search: createSearchParams({
+                        juniorDeveloper: true,
+                      }).toString(),
+                    })
+                  }
+                >
+                  Details
+                </button>
                 <button className="apply-button">Apply More</button>
               </div>
             </div>
@@ -74,9 +91,19 @@ const Career = () => {
             <div className="d-flex">
               <p>minimum experience: Fresh Graduation</p>
               <div className="ms-auto">
-              <Link to='/hr-intern'>
-                <button className="details-button">Details</button>
-                </Link>
+              <button
+                  className="details-button"
+                  onClick={() =>
+                    navigate({
+                      pathname: "/hr-intern",
+                      search: createSearchParams({
+                        hrIntern: true,
+                      }).toString(),
+                    })
+                  }
+                >
+                  Details
+                </button>
                 <button className="apply-button">Apply More</button>
               </div>
             </div>
@@ -86,16 +113,27 @@ const Career = () => {
             <div className="d-flex">
               <p>minimum experience: Fresh Graduation</p>
               <div className="ms-auto">
-              <Link to='/project-manager'>
-                <button className="details-button">Details</button>
-                </Link>
+              <button
+                  className="details-button"
+                  onClick={() =>
+                    navigate({
+                      pathname: "/project-manager",
+                      search: createSearchParams({
+                        projectManager: true,
+                      }).toString(),
+                    })
+                  }
+                >
+                  Details
+                </button>
                 <button className="apply-button">Apply More</button>
               </div>
             </div>
           </div>
         </div>
       </section>
-    </>
+      <Footer />
+    </div>
   );
 };
 

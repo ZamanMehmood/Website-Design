@@ -253,11 +253,11 @@ margin-bottom: 20px;
 }
 .sn1{
    text-align: center;
+   margin-bottom: 35px;
 }
 
 .work-para{
-text-align: centers;
-margin-top: 25px;
+text-align: center;
 }
 
 
@@ -287,7 +287,7 @@ margin-top: 25px;
    text-align: center;
 }
 .f1-container{
-   width: 1180px;
+width: 1180px;
 height: 72px;
 margin-bottom: 15px;
 
@@ -511,4 +511,141 @@ border: none;
 
  }
 
- 
+ .st-1:hover{
+   color: white;
+   background-color: #1487E3;
+ }
+
+ .st-2:hover{
+   color: white;
+   background-color: #9B5C8F;
+ }
+
+ .st-3:hover{
+   color: white;
+   background-color: #F37B20;
+ }
+
+ .st-4:hover{
+   color: white;
+   background-color: #595BD4;
+ }
+
+ .st-5:hover{
+   color: white;
+   background-color: #34A853;
+ }
+
+ .st-6:hover{
+   color: white;
+   background-color: #D85B53;
+ }
+
+ .st-7:hover{
+   color: white;
+   background-color: #D8A353;
+ }
+
+ .st-8:hover{
+   color: white;
+   background-color: #FF4081;
+ }
+
+ .st-heading{
+   padding-top: 10px;
+ }
+
+//  footer section 
+
+.footer-section{
+   background-color: #C7C6C6;
+   margin-top: -15px;
+}
+
+.message-box{
+   height: 100px;
+   width: 520px;
+   background-color: #C7C6C6;
+   border: 1px solid black;
+}
+
+.input-box{
+   background-color: #C7C6C6;
+   border: 1px solid black;
+}
+
+.radio-button{
+   background-color: #C7C6C6;
+}
+
+.submit-button{
+   height: 40px;
+   width: 110px;
+   color: white;
+   background:  #C10017;
+   border-radius: 10px;
+   border: none;
+}
+
+
+.submit-button-container{
+   margin-top: 25px;
+}
+
+.ws1{
+       width: 230px;
+}
+
+.ws2{
+   width: 300px;
+   margin-left: 10px;
+}
+
+.mws{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 30px;
+}
+.application-button{
+   height: 40px;
+   width: 130px;
+   background-color: #C10017;
+   color: white;
+   border: none;
+   border-radius: 15px;
+   margin-top: 15px;
+}
+
+.tany-text{
+   color: #C10017;
+}
+
+.footer-sec{
+   height: 80px;
+   background-color: black;
+   color: white;
+}
+
+.footer-content-container{
+   display: flex;
+   text-align: center;
+}
+
+.careerbg-image{
+   background: url('../Assets/caree-Assets/Rectangle90.svg');
+   background-repeat: no-repeat;
+   background-size: cover;
+width: 1351px;
+height: 460px;
+}
+
+
+.caree-first-section{
+   height: 220px;
+   width: 420px;
+   float: right;
+   margin: 50px 40px 0 0;
+   // margin-right: 40px;
+   // margin-top: 50px;
+}

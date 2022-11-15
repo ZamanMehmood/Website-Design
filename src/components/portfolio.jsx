@@ -27,6 +27,7 @@ import php from "../Assets/portfolio-Assets/php.svg";
 import bootstrap from "../Assets/portfolio-Assets/bootstrap.svg";
 import diamond from "../Assets/portfolio-Assets/diamond.svg";
 import twill from "../Assets/portfolio-Assets/twill.png"
+import Footer from "./Footer";
 
 const Portfolio = () => {
   return (
@@ -435,6 +436,7 @@ const Portfolio = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };

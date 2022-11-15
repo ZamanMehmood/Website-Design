@@ -1,5 +1,5 @@
-import React from 'react';
-import Navbar from './Navbar';
+import React from "react";
+import Navbar from "./Navbar";
 import "./homepage.scss";
 import "./responsive.scss";
 import icon1 from "../Assets/caree-Assets/icon1.png";
@@ -10,16 +10,51 @@ import icon5 from "../Assets/caree-Assets/icon5.png";
 import icon6 from "../Assets/caree-Assets/icon6.png";
 import icon7 from "../Assets/caree-Assets/icon7.png";
 import icon8 from "../Assets/caree-Assets/icon8.png";
+import { useSearchParams } from "react-router-dom";
 
 const Senior = () => {
-    return ( 
-        <div>
-            <Navbar />
-            <div className="container">
+  const [searchParams] = useSearchParams();
+  const senior = searchParams.get("seniorDevleoper");
+  const junior = searchParams.get("juniorDeveloper");
+  const intern = searchParams.get("hrIntern");
+  const pm = searchParams.get("projectManager");
+  console.log("junior developer", junior);
+  // juniorDeveloper
+  console.log("senior developer", senior);
+
+  return (
+    <div>
+      <Navbar />
+      <div className="container">
         <h2 className="ror-junior">
-          <span className="rails-title">
-            ROR/Ruby on Rails developer(Senior)
-          </span>
+          {senior ? (
+            <span className="rails-title">
+              ROR/Ruby on Rails developer(Senior)
+            </span>
+          ) : null}
+        </h2>
+        <h2 className="ror-junior">
+          {junior ? (
+            <span className="rails-title">
+              ROR/Ruby on Rails developer(Junior)
+            </span>
+          ) : null}
+        </h2>
+
+        <h2 className="ror-junior">
+          {intern ? (
+            <span className="rails-title">
+              HR/Human Resource(intern)
+            </span>
+          ) : null}
+        </h2>
+
+        <h2 className="ror-junior">
+          {pm ? (
+            <span className="rails-title">
+              Project Manager
+            </span>
+          ) : null}
         </h2>
         <p>
           We immediately require ROR Software Engineers graduates from reputable
@@ -98,7 +133,7 @@ const Senior = () => {
         <div className="row ms-3">
           <div className="col-lg-3 ">
             <div className="main-boder">
-              <img src={icon1} alt="" className="img-fluid"  />
+              <img src={icon1} alt="" className="img-fluid" />
               <h6>Paid Time Offs</h6>
               <p>
                 Amet minim mollit non <br /> deseru
@@ -135,7 +170,7 @@ const Senior = () => {
         </div>
         <div className="row mt-3 ms-3">
           <div className="col-lg-3">
-          <div className="main-boder">
+            <div className="main-boder">
               <img src={icon5} alt="" className="img-fluid" />
               <h6>Paid Time Offs</h6>
               <p>
@@ -144,7 +179,7 @@ const Senior = () => {
             </div>
           </div>
           <div className="col-lg-3">
-          <div className="main-boder">
+            <div className="main-boder">
               <img src={icon6} alt="" className="img-fluid" />
               <h6>Paid Time Offs</h6>
               <p>
@@ -153,7 +188,7 @@ const Senior = () => {
             </div>
           </div>
           <div className="col-lg-3">
-          <div className="main-boder">
+            <div className="main-boder">
               <img src={icon7} alt="" className="img-fluid" />
               <h6>Paid Time Offs</h6>
               <p>
@@ -162,7 +197,7 @@ const Senior = () => {
             </div>
           </div>
           <div className="col-lg-3">
-          <div className="main-boder">
+            <div className="main-boder">
               <img src={icon8} alt="" className="img-fluid" />
               <h6>Paid Time Offs</h6>
               <p>
@@ -174,19 +209,22 @@ const Senior = () => {
       </div>
 
       <div className="work1">
-        <h2>If you are looking for a  fun place to work, dont wait and apply right away</h2>
+        <h2>
+          If you are looking for a fun place to work, dont wait and apply right
+          away
+        </h2>
       </div>
 
-          <div className=" container d-flex my-4">
-          <button type="button" className="b-positions text-start">
-              SCHEDULE A MEETING
-            </button>
-            <button type="button" className="btn btn-danger text-end ms-auto">Apply Now</button>
-          </div>
-    
+      <div className=" container d-flex my-4">
+        <button type="button" className="b-positions text-start">
+          SCHEDULE A MEETING
+        </button>
+        <button type="button" className="btn btn-danger text-end ms-auto">
+          Apply Now
+        </button>
+      </div>
+    </div>
+  );
+};
 
-        </div>
-     );
-}
- 
 export default Senior;

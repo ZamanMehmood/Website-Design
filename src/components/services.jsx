@@ -30,11 +30,7 @@ import ccy from "../Assets/Services Assets/ccy.png";
 import sse from "../Assets/Services Assets/sse.png";
 import amazon from "../Assets/Services Assets/amazon.png";
 import sass from "../Assets/Services Assets/sass.png";
-
-
-
-
-
+import Footer from "./Footer";
 
 import "./homepage.scss";
 import "./responsive.scss";
@@ -565,6 +561,8 @@ const Services = () => {
       ) : (
         ""
       )}
+
+      <Footer />
     </div>
   );
 };

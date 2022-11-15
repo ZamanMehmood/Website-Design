@@ -24,13 +24,14 @@ import award2 from "../Assets/award2.png";
 import award3 from "../Assets/award3.png";
 import group173 from "../Assets/group173.svg";
 import group182 from "../Assets/group182.png";
+import Footer from "./Footer";
 
 import Navbar from "./Navbar";
 
 const Homepage = () => {
   return (
     <div>
-       <Navbar />
+      <Navbar />
       {/* section #1 */}
       <section>
         <div className="first-section container-fluid ">
@@ -182,7 +183,6 @@ const Homepage = () => {
               </div>
             </div>
             <div className="col-lg-6 ">
-
               <div className="webDevelopment">
                 <h2 className="webheading">Web Development</h2>
                 <p className="webparagraph">
@@ -193,8 +193,8 @@ const Homepage = () => {
               {/* <div class="container ms-5"> */}
               <div className="grid-container">
                 <div className="row pt-3 ">
-                 <div className="col-lg-4 ">
-                    <img src={Rectangle108}  className="img-fluid" alt="" />
+                  <div className="col-lg-4 ">
+                    <img src={Rectangle108} className="img-fluid" alt="" />
                   </div>
                   <div className="col-lg-4">
                     <img src={Group39} className="img-fluid" alt="" />
@@ -202,17 +202,16 @@ const Homepage = () => {
                   <div className="col-lg-4">
                     <img src={Group42} className="img-fluid" alt="" />
                   </div>
-                
                 </div>
                 <div className="row pt-3 ">
                   <div className="col-lg-4 mt-2">
-                  <img src={Group45} className="img-fluid" alt="" />
+                    <img src={Group45} className="img-fluid" alt="" />
                   </div>
                   <div className="col-lg-4 mt-2">
-                  <img src={Group44} className="img-fluid" alt="" />
+                    <img src={Group44} className="img-fluid" alt="" />
                   </div>
                   <div className="col-lg-4 mt-2">
-                  <img src={mongo211} className="img-fluid" alt="" />
+                    <img src={mongo211} className="img-fluid" alt="" />
                   </div>
                 </div>
                 <div className="row pt-3 ">
@@ -226,10 +225,10 @@ const Homepage = () => {
                     <img src={vue} className="img-fluid" alt="" />
                   </div>
                 </div>
-                </div>
-                 <div className="text-end learnMore-container">
+              </div>
+              <div className="text-end learnMore-container">
                 <button type="button" className="btn learnMore-button p-2">
-                 Learn More
+                  Learn More
                 </button>
               </div>
             </div>
@@ -239,34 +238,42 @@ const Homepage = () => {
 
       {/* section # 5  */}
       <section className="triangle-background">
-           <div className="container">
-            <div className="row">
-              <div className="col-lg-6 mss">
-                    <div>
-                      <h2><span className="engagement-heading">Engage</span>ment Model</h2>
-                      <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit..</p>
-                      <img src={group182} alt="" className="img-fluid"  />
-                    </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6 mss mt-2">
+              <div>
+                <h2>
+                  <span className="engagement-heading">Engage</span>ment Model
+                </h2>
+                <p className="mt-3">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit..
+                </p>
+                <img src={group182} alt="" className="img-fluid" />
               </div>
-              <div className="col-lg-6"></div>
             </div>
-           </div>
-           </section>
-                
-         {/* section # 6 */}
-      <section className="awardBgColor">
-        <div className="container ">
-          <div>
-          <h2 className="text-center p-3"><span className="awards-heading">Awards</span>& Recognition</h2>
-          </div>
-          <div className="m-2">
-            <img src={award1} alt="" className="img-fluid p-2" />
-            <img src={award2} alt="" className="img-fluid p-2"/>
-            <img src={award3} alt="" className="img-fluid p-2"/>
+            <div className="col-lg-6"></div>
           </div>
         </div>
       </section>
-    </div> 
+
+      {/* section # 6 */}
+      <section className="awardBgColor">
+        <div className="container ">
+          <div>
+            <h2 className="text-center p-3">
+              <span className="awards-heading">Awards</span>& Recognition
+            </h2>
+          </div>
+          <div className="m-2">
+            <img src={award1} alt="" className="img-fluid p-2" />
+            <img src={award2} alt="" className="img-fluid p-2" />
+            <img src={award3} alt="" className="img-fluid p-2" />
+          </div>
+        </div>
+      </section>
+    <Footer />
+    </div>
   );
 };
 
