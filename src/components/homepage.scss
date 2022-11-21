@@ -336,7 +336,6 @@ margin-bottom: 15px;
 .job-details{
    height: 70px;
    width: 650px;
-   // background-color: #14A0C0;
    margin-top: 7px;
  border-bottom: 2px solid #646464;
 }
@@ -407,7 +406,7 @@ margin-bottom: 15px;
 }
 
 
- /// contact page
+                                     /// contact page
 .bg-contact{
    background-color: #F5F5F5;
 }
@@ -435,15 +434,25 @@ margin-bottom: 15px;
 }
 .column-content1{
    position: absolute;
-   left: 50%;
+   left: 42%;
    top: 50%;
+   color: black;
+   text-decoration: none;
    padding-top: 10px;
+}
+.column-content1:hover{
+   color: black;
 }
 .column-content2{
    position: absolute;
-   left: 12%;
+   left: 9%;
    top: 50%;
    padding-top: 10px;
+   color: black;
+   text-decoration: none;
+}
+.column-content2:hover{
+   color: black;
 }
 .contact-image1{
    height: 250px;
@@ -460,6 +469,44 @@ margin-bottom: 15px;
    border-radius: 10px;
 margin-left: 500px;
 border: none;
+}
+.contact-modal1{
+     height: 45px;
+     width: 230px;
+     margin: 0 17px 0 0;
+}
+.contact-modal2{
+   height: 45px;
+   width: 230px;
+}
+.contact-modal3{
+   height: 45px;
+   width: 230px;
+   margin: 13px 0 0 0;
+}
+.contact-modal4{
+   height: 45px;
+   width: 230px;
+   margin: 11px 0 0 15px;
+}
+.message-textarea{
+   resize: none;
+   margin: 15px 0 0 0;
+}
+
+.contact-file-icon{
+   float: right;
+}
+
+.contact-submit-button{
+   border: 1px solid red;
+   height: 40px;
+   width: 90px;
+   margin-left: 180px;
+   margin-top: 35px;
+   text-align: center;
+   background: none;
+   border-radius: 10px;
 }
 .contact-parent{
    display: flex;
@@ -555,7 +602,16 @@ border: none;
    padding-top: 10px;
  }
 
-//  footer section 
+
+
+
+
+
+
+
+
+
+                                                   //  footer section 
 
 .footer-section{
    background-color: #C7C6C6;
@@ -578,6 +634,13 @@ border: none;
    background-color: #C7C6C6;
 }
 
+.form-check-input{
+   background-color: #C7C6C6 !important;
+
+}
+.email-radio-button{
+   padding-right: 15px;
+}
 .submit-button{
    height: 40px;
    width: 110px;
@@ -636,7 +699,7 @@ border: none;
    background: url('../Assets/caree-Assets/Rectangle90.svg');
    background-repeat: no-repeat;
    background-size: cover;
-width: 1351px;
+width: 1501px;
 height: 460px;
 }
 
@@ -649,3 +712,43 @@ height: 460px;
    // margin-right: 40px;
    // margin-top: 50px;
 }
+
+.contact-container{
+   margin-left: 46px;
+   margin-top: 11px;
+}
+
+.useful-links-container{
+   display: inline-block;
+   margin-left: 45px;
+}
+
+// .services-link{
+//    color: black;
+  
+// }
+.footer-unorder-list{
+   list-style: none;
+   padding-left: 0rem;
+}
+ 
+.footer-order-list{
+   margin-bottom: 5px;
+   color: black;
+   list-style: none;
+   text-decoration: none;
+}
+.container-anchor{
+   color: black;
+   text-decoration: none;
+}
+.container-anchor:hover{
+   color: black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+

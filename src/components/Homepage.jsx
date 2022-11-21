@@ -25,10 +25,13 @@ import award3 from "../Assets/award3.png";
 import group173 from "../Assets/group173.svg";
 import group182 from "../Assets/group182.png";
 import Footer from "./Footer";
-
 import Navbar from "./Navbar";
 
+
+
+
 const Homepage = () => {
+ 
   return (
     <div>
       <Navbar />

@@ -7,11 +7,13 @@ import About from "./components/About";
 import Career from "./components/Career";
 import Contact from "./components/Contact";
 import Senior from "./components/Senior";
+import ScroolToTop from "./components/ScrollToTop";
 
 function App() {
   return ( 
     <div className="App">
      <BrowserRouter>
+     <ScroolToTop />
       <Routes>
         <Route path="/" element={<Homepage />}></Route>
           <Route path="/services" element={<Services />} />
