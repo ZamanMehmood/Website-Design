@@ -1,51 +1,61 @@
-import React,{ useState, useRef } from "react";
+import React, { useState, useRef } from "react";
 import straight from "../Assets/straight.svg";
 import linkding from "../Assets/linkding.svg";
 import facebook from "../Assets/facebook.svg";
 import insta from "../Assets/insta.svg";
 import call from "../Assets/call.svg";
-import "./homepage.scss"; 
+import "./homepage.scss";
 import "./responsive.scss";
 import { Link } from "react-router-dom";
 import Services from "./services";
-// 
-import emailjs from '@emailjs/browser';  // use emailjs service for sending email when user submit the form
-// 
+//
+import emailjs from "@emailjs/browser"; // use emailjs service for sending email when user submit the form
+//
 
 const Footer = () => {
   const Initial_Values = {
-    user_name: '',
-    user_email:'',
-    user_number:'',
-    contact_info: '',
-    user_message: ''
+    user_name: "",
+    user_email: "",
+    user_number: "",
+    contact_info: "",
+    user_message: "",
   };
-  const [formValues, setFormValues]=useState(Initial_Values);
+  const [formValues, setFormValues] = useState(Initial_Values);
 
   // console.log("form value", formValues);
 
-  const handleChange = (e) =>{
-    const {name, value} = e.target;
-    setFormValues({...formValues, [name]:value})
-  }
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormValues({ ...formValues, [name]: value });
+  };
 
-  // use  emailjs service for sending email when user submit the form   also send data using 
+  // use  emailjs service for sending email when user submit the form   also send data using
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-     // add service id , template id, public key
-    emailjs.sendForm('service_q13mh96', 'template_wuu212i', form.current, '_EdDeF0lUP-7k4y7h')
-      .then((result) => {
+    // add service id , template id, public key
+    emailjs
+      .sendForm(
+        "service_gy1ftsf",
+        "template_wuu212i",
+        form.current,
+        "_EdDeF0lUP-7k4y7h"
+      )
+      .then(
+        (result) => {
           console.log(result.text);
-      }, (error) => {
+        },
+        (error) => {
           console.log(error.text);
-      });
+        }
+      );
+      setFormValues(Initial_Values);
   };
 
   return (
     <div>
-      <form className="footer-section" ref={form}  onSubmit={sendEmail} >
+      <form className="footer-section" ref={form} onSubmit={sendEmail}>
         <div className="container">
           <div className="row">
             <div className="col-lg-6 mt-4">
@@ -54,62 +64,96 @@ const Footer = () => {
                 <div className="d-flex">
                   <div className="me-4">
                     <label>Your Name</label>
-                    <input type="text" className="input-box" name="user_name" onChange={handleChange} />
+                    <input
+                      type="text"
+                      className="input-box"
+                      name="user_name"
+                      onChange={handleChange}
+                      value={formValues.user_name}
+                    />
                   </div>
                   <div>
                     <label>Your Email Address</label>
-                    <input type="email" className="input-box" name="user_email" onChange={handleChange}/>
+                    <input
+                      type="email"
+                      className="input-box"
+                      name="user_email"
+                      onChange={handleChange}
+                      value={formValues.user_email}
+                    />
                   </div>
                 </div>
 
                 <div className="d-flex mt-2">
                   <div className="">
                     <label className="d-block">Your Phone No</label>
-                    <input type="number" className="input-box" name="user_number" onChange={handleChange}/>
+                    <input
+                      type="number"
+                      className="input-box"
+                      name="user_number"
+                      onChange={handleChange}
+                      value={formValues.user_number}
+                    />
                   </div>
                   <div className="contact-container">
                     <label>How Should We Contact You?</label>
                     <div className="ps-1">
                       <span className="email-radio-button">
-                      <label
-                        className="form-check-label"
-                        for="flexRadioDefault2"
-                      >Email</label>
-                      <input
-                        className="form-check-input"
-                        type="radio"
-                        name="contact_info"
-                        value='contact-email'
-                        id="flexRadioDefault2"
-                        onChange={handleChange}
-                      />
+                        <label
+                          className="form-check-label"
+                          for="flexRadioDefault2"
+                        >
+                          Email
+                        </label>
+                        <input
+                          className="form-check-input"
+                          type="radio"
+                          name="contact_info"
+                          // value="contact-email"
+                          id="flexRadioDefault2"
+                          onChange={handleChange}
+                          value={formValues.contact_info}
+                           
+                        />
                       </span>
-                     <span>
-                     <label
-                        className="form-check-label"
-                        for="flexRadioDefault2"
-                      >Phone</label>
-                      <input
-                        className="form-check-input"
-                        type="radio"
-                        name="contact_info"
-                        id="flexRadioDefault2"
-                        value='contact-phone'
-                        onChange={handleChange}
-                      />
-                     </span>
-                      
+                      <span>
+                        <label
+                          className="form-check-label"
+                          for="flexRadioDefault2"
+                        >
+                          Phone
+                        </label>
+                        <input
+                          className="form-check-input"
+                          type="radio"
+                          name="contact_info"
+                          id="flexRadioDefault2"
+                          // value="contact-phone"
+                          onChange={handleChange}
+                          value={formValues.contact_info}
+                        />
+                      </span>
                     </div>
                   </div>
                 </div>
 
                 <div>
                   <h6>Message</h6>
-                  <input type="text" className="message-box"  name="user_message" onChange={handleChange}/>
+                  <input
+                    type="text"
+                    className="message-box"
+                    name="user_message"
+                    onChange={handleChange}
+                    value={formValues.user_message}
+                  />
                 </div>
 
                 <div className="submit-button-container">
-                  <input type='submit' value="Submit" className="submit-button" />
+                  <input
+                    type="submit"
+                    value="Submit"
+                    className="submit-button"
+                  />
                 </div>
               </div>
             </div>
@@ -149,9 +193,12 @@ const Footer = () => {
                 <div className="ws2">
                   <h6>Looking for a job?</h6>
                   <img src={straight} className="img-fluid" alt="" />
-
                   <h6>Apply at</h6>
-                  <h6 className="tany-text">hr@isoftstudios.com</h6>
+                  <h6 className="tany-text">
+                    <a href="mailto:hr@isoftstudios.com" className="container-anchor">
+                      hr@isoftstudios.com
+                    </a>
+                  </h6>
                   <Link to="/contact">
                     <div>
                       <button className="application-button">
@@ -176,7 +223,7 @@ const Footer = () => {
                   </li>
                   <li className="footer-order-list">
                     <Link to="/portfolio" className="container-anchor">
-                     Portfolio
+                      Portfolio
                     </Link>
                   </li>
                   <li className="footer-order-list">

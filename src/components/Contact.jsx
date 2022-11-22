@@ -13,45 +13,52 @@ import "./responsive.scss";
 //  react-bototstrap modal
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import emailjs from '@emailjs/browser';  // use emailjs service for sending email when user submit the form
-
-
+import emailjs from "@emailjs/browser"; // use emailjs service for sending email when user submit the form
 
 const Contact = () => {
   const InitialValues = {
     User_name: "",
     User_email: "",
-    User_phone: "",
+    User_number: "",
     User_company: "",
-    User_message: ""
+    User_message: "",
   };
   const [formValues, setFormValues] = useState(InitialValues);
-  console.log("formVaues=====>", formValues)
-  
-    //  states for  react bootstrap modal
-    const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-     
-  const handleChange = (e) => {
-    const {name, value} = e.target;
-    setFormValues({...formValues, [name]:value})
-  }
+  console.log("formVaues=====>", formValues);
 
+  //  states for  react bootstrap modal
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);    
+  const handleShow = () => setShow(true);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormValues({ ...formValues, [name]: value });
+  };
 
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-     // add service id , template id, public key
-    emailjs.sendForm('service_q13mh96', 'template_wuu212i', form.current, '_EdDeF0lUP-7k4y7h')
-      .then((result) => {
+    // add service id , template id, public key
+    emailjs
+      .sendForm(
+        "service_1xpq16z",
+        "template_pdvmq1d",
+        form.current,
+        "_EdDeF0lUP-7k4y7h"
+      )
+      .then(
+        (result) => {
           console.log(result.text);
-      }, (error) => {
+        },
+        (error) => {
           console.log(error.text);
-      });
-  };
+        }
+      );
+      setFormValues(InitialValues);
 
+  };
 
   return (
     <div>
@@ -88,59 +95,75 @@ const Contact = () => {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-                <form  ref={form} onSubmit={sendEmail}>
-                  <div className="d-flex align-items-center">
-                    {/* <label>Your Name</label> */}
-                    <input 
-                    name='User_name'
-                    type="text"
-                    className="contact-modal1"
-                    placeholder="Name"
-                    onChange={handleChange}
-                     />
-                    {/* <label>Your Email</label> */}
-                    <input
-                    name="User_email"
-                    type="text"
-                    className="contact-modal2"
-                    placeholder="Email" 
-                    onChange={handleChange}
-                    />
-                  </div>
-                  <div className="d-flex align-items-center">
-                    {/* <label>Your Password</label> */}
-                    <input
-                    name="User_phone"
-                     type="text"
-                    className="contact-modal3" 
-                    placeholder="Phone"
-                    onChange={handleChange}
-                     />
-                    {/* <label>Your Age</label> */}
-                    <input
-                    name="User_company"
-                     type="text"
-                     className="contact-modal4"
-                      placeholder="Company" 
-                      onChange={handleChange}
-                      />
-                  </div>
-                  <textarea 
-                    name="User_message"
-                    id=""
-                    cols="45" 
-                    rows="4"
-                    className="message-textarea"
-                    onChange={handleChange}
-                    >Message</textarea>
+          <form ref={form} onSubmit={handleSubmit}>
+            <div className="d-flex alig   n-items-center">
+              {/* <label>Your Name</label> */}
+              <input
+                name="User_name"
+                type="text"
+                className="contact-modal1"
+                placeholder="Name"
+                onChange={handleChange}
+                value={formValues.User_name}
+              />
+              {/* <label>Your Email</label> */}
+              <input
+                name="User_email"
+                type="text"
+                className="contact-modal2"
+                placeholder="Email"
+                onChange={handleChange}
+                value={formValues.User_email}
+              />
+            </div>
+            <div className="d-flex align-items-center">
+              {/* <label>Your Password</label> */}
+              <input
+                name="User_number"
+                type="number"
+                className="contact-modal3"
+                placeholder="Phone"
+                onChange={handleChange}
+                value={formValues.User_number}
+              />
+              {/* <label>Your Age</label> */}
+              <input
+                name="User_company"
+                type="text"
+                className="contact-modal4"
+                placeholder="Company"
+                onChange={handleChange}
+                value={formValues.User_company}
+              />
+            </div>
+            <textarea
+              name="User_message"
+              cols="45"
+              rows="4"
+              type="text"
+              className="message-textarea"
+              onChange={handleChange}
+              value={formValues.User_message}
+            />
 
-                </form>
-                <span className="contact-file-icon">Attach file
-                <i class="fa fa-file-text-o"></i>
-                </span>
+            <span className="contact-file-icon">
+              Attach file
+              <i class="fa fa-file-text-o"></i>
+            </span>
 
-                <input className="contact-submit-button" value="Submit" type='button' />
-
+            {/* <div className="submit-button-container">
+                  <input
+                    type="submit"
+                    value="Submit"
+                    className="submit-button"
+                  />
+                </div> */}
+            <input
+              className="contact-submit-button"
+              value="submit"
+              type="submit"
+            />
+          </form>
         </Modal.Body>
         {/* <Modal.Footer>
           <h2>Footer</h2>
@@ -166,24 +189,33 @@ const Contact = () => {
                 </div>
                 <div className="first-column">
                   <img src={c2} alt="" className="img-fluid contact-image" />
-                <Button variant="light" onClick={handleShow}>
-                  <a className="column-content1">Send a Message</a>
+                  <Button variant="light" onClick={handleShow}>
+                    <a className="column-content1">Send a Message</a>
                   </Button>
                 </div>
               </div>
               <div className="col-lg-6">
                 <div className="second-column">
                   <img src={c3} alt="" className="img-fluid contact-image1" />
-                  <h6 >  <a href="tel:123-456-7890" className="column-content2"> (042) 35312424</a></h6>
+                  <h6>
+                    {" "}
+                    <a href="tel:123-456-7890" className="column-content2">
+                      {" "}
+                      (042) 35312424
+                    </a>
+                  </h6>
                 </div>
                 <div className="second-column">
                   <img src={c4} alt="" className="img-fluid contact-image1" />
                   <h6>
-                   <a href="mailto:hr@isoftstudios.com"  className="column-content2">
-                    sales@isoftstudios.com <br />
-                    hello@isoftstudios.com <br />
-                    hr@isoftstudios.com
-                   </a>
+                    <a
+                      href="mailto:hr@isoftstudios.com"
+                      className="column-content2"
+                    >
+                      sales@isoftstudios.com <br />
+                      hello@isoftstudios.com <br />
+                      hr@isoftstudios.com
+                    </a>
                   </h6>
                 </div>
               </div>
@@ -201,7 +233,15 @@ const Contact = () => {
         </div>
       </section>
       <section>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108890.71258881237!2d74.1918597430211!3d31.473731138728972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391903d3cba2bc91%3A0xd0bb34288eadafb2!2siSOFTSTUDIOS!5e0!3m2!1sen!2s!4v1668064325312!5m2!1sen!2s" width="100%" height="600" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108890.71258881237!2d74.1918597430211!3d31.473731138728972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391903d3cba2bc91%3A0xd0bb34288eadafb2!2siSOFTSTUDIOS!5e0!3m2!1sen!2s!4v1668064325312!5m2!1sen!2s"
+          width="100%"
+          height="600"
+          style={{ border: 0 }}
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
       <Footer />
     </div>
