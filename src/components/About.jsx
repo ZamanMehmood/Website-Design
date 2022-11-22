@@ -18,24 +18,26 @@ import icon5 from "../Assets/caree-Assets/icon5.png";
 import icon6 from "../Assets/caree-Assets/icon6.png";
 import icon7 from "../Assets/caree-Assets/icon7.png";
 import icon8 from "../Assets/caree-Assets/icon8.png";
+import Footer from "./Footer";
 
 const About = () => {
   return (
-    <>
+    <div>
       <Navbar />
       {/* first section  */}
 
       <section >
         <div className="container">
           <div className="row">
-            <div className="col-lg-6">
-              <img src={about} alt="" className="img-fluid" />
-            </div>
-            <div className="col-lg-6">
+          <div className="col-lg-6">
               <div className="About-first-section">
                 <h2>isoftstudios,We are Your Digital Partner</h2>
               </div>
             </div>
+            <div className="col-lg-6">
+              <img src={about} alt="" className="img-fluid" />
+            </div>
+            
           </div>
         </div>
       </section>
@@ -139,87 +141,64 @@ const About = () => {
           </p>
 
           {/*  */}
-          <div className="container">
+          <div className="container mb-3">
             <div className="row ms-3">
               <div className="col-lg-3 ">
-                <div className="main-boder">
+                <div className="main-boder st-1">
                   <img src={icon1} alt="" className="img-fluid" />
-                  <h6>Paid Time Offs</h6>
-                  <p>
-                    Amet minim mollit non <br /> deseru
-                  </p>
+                  <h6 className="st-heading">project Bonuses</h6>
                 </div>
               </div>
               <div className="col-lg-3">
-                <div className="main-boder">
+                <div className="main-boder st-2">
                   <img src={icon2} alt="" className="img-fluid" />
-                  <h6>Paid Time Offs</h6>
-                  <p>
-                    Amet minim mollit non <br /> deseru
-                  </p>
+                  <h6 className="st-heading">Lunch</h6>
                 </div>
               </div>
               <div className="col-lg-3">
-                <div className="main-boder">
-                  <img src={icon3} alt="" className="img-fluid" />
-                  <h6>Paid Time Offs</h6>
-                  <p>
-                    Amet minim mollit non <br /> deseru
-                  </p>
+                <div className="main-boder st-3">
+                  <img src={icon3} alt="" className="img-fluid text-light" />
+                  <h6 className="st-heading">Medical Coverage</h6>
                 </div>{" "}
               </div>
               <div className="col-lg-3">
-                <div className="main-boder">
+                <div className="main-boder st-4">
                   <img src={icon4} alt="" className="img-fluid" />
-                  <h6>Paid Time Offs</h6>
-                  <p>
-                    Amet minim mollit non <br /> deseru
-                  </p>
+                  <h6 className="st-heading">Annual Tours</h6>                      
                 </div>
               </div>
             </div>
             <div className="row mt-3 ms-3">
               <div className="col-lg-3">
-                <div className="main-boder">
+                <div className="main-boder st-5">
                   <img src={icon5} alt="" className="img-fluid" />
-                  <h6>Paid Time Offs</h6>
-                  <p>
-                    Amet minim mollit non <br /> deseru
-                  </p>
+                  <h6 className="st-heading">Bonuses</h6>
                 </div>
               </div>
               <div className="col-lg-3">
-                <div className="main-boder">
+                <div className="main-boder st-6">
                   <img src={icon6} alt="" className="img-fluid" />
-                  <h6>Paid Time Offs</h6>
-                  <p>
-                    Amet minim mollit non <br /> deseru
-                  </p>
+                  <h6 className="st-heading">Training</h6>
                 </div>
               </div>
               <div className="col-lg-3">
-                <div className="main-boder">
+                <div className="main-boder st-7">
                   <img src={icon7} alt="" className="img-fluid" />
-                  <h6>Paid Time Offs</h6>
-                  <p>
-                    Amet minim mollit non <br /> deseru
-                  </p>
+                  <h6 className="st-heading">Monthly Dinner</h6>
                 </div>
               </div>
               <div className="col-lg-3">
-                <div className="main-boder">
+                <div className="main-boder st-8">
                   <img src={icon8} alt="" className="img-fluid" />
-                  <h6>Paid Time Offs</h6>
-                  <p>
-                    Amet minim mollit non <br /> deseru
-                  </p>
+                  <h6 className="st-heading">Paid Time Offs</h6>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-    </>
+      <Footer />
+    </div>
   );
 };
 
